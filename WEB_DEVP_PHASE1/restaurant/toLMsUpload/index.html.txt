@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model</title>
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            body {
+              margin: 0;
+              font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .topnav {
+              overflow: hidden;
+              background-color: #333;
+            }
+            
+            .topnav a {
+              float: left;
+              display: block;
+              color: #f2f2f2;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 17px;
+            }
+            
+            .topnav a:hover {
+              background-color: #ddd;
+              color: black;
+            }
+            
+            .topnav a.active {
+              background-color: #04AA6D;
+              color: white;
+            }
+            
+            .topnav .icon {
+              display: none;
+            }
+            
+            @media screen and (max-width: 600px) {
+              .topnav a:not(:first-child) {display: none;}
+              .topnav a.icon {
+                float: right;
+                display: block;
+              }
+            }
+            
+            @media screen and (max-width: 600px) {
+              .topnav.responsive {position: relative;}
+              .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+              }
+              .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+              }
+            }
+            .row{
+              height:auto;
+              width: 100%;
+
+            }
+            .mySlides {
+              display:none;
+            }
+
+           
+
+            
+
+
+
+</style>
+            
+</head>
+ <body>
+        
+        <div class="topnav" id="myTopnav">
+          <a href="#home" class="active" >Home</a>
+          <a href="bestceller.html">Best seller</a>
+          <a href="contactus.html">Contact us</a>
+         
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+       <!--slide show start-->
+       <h2 style="text-align: center;">Ming’s Diner</h2>
+        
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="C:\Users\dsinchana\OneDrive - ZeOmega\Desktop\web development\restaurant\image\13.jpg" style="width:100%">
+  <img class="mySlides" src="C:\Users\dsinchana\OneDrive - ZeOmega\Desktop\web development\restaurant\image\15.jpg" style="width:100%">
+  <img class="mySlides" src="C:\Users\dsinchana\OneDrive - ZeOmega\Desktop\web development\restaurant\image\images.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+ <!--Slide show end--><br><br>
+
+
+<div>
+    <h1 style="text-align: center;">Restaurant</h1>    
+<div>
+  <p style="text-align: justify; padding: 33px;background-color: gray;">A restaurant, or, more informally, an eatery, is a business that prepares and serves food and drinks to customers.[1]
+    als are generally served and eaten on the premises, but many restaurants also offer take-out and food delivery services.
+    Restaurants vary greatly in appearance and offerings, including a wide variety of cuisines and service models ranging from
+    inexpensive fast food restaurants and cafeterias, to mid-priced family restaurants, to high-priced luxury establishments.
+
+    In Western countries, most mid-to high-range restaurants serve alcoholic beverages such as beer and wine. Some restaurants
+    serve all the major meals, such as breakfast, lunch, and dinner (e.g., major fast food chains, diners, hotel restaurants, and
+    airport restaurants). Other restaurants may serve only a single meal (for example, a pancake house may only serve breakfast) 
+    or they may serve two meals (e.g., lunch and dinner).</p>
+</div>   
+</div>   
+        <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+        
+        </body>
+        </html>
+        
+      
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+      </body>
+      
+</html>
